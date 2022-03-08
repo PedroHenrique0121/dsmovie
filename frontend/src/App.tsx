@@ -1,12 +1,24 @@
+import Form from "componentes/Pages/Form";
+import Listing from "componentes/Pages/Listing";
 import React from "react"
 
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import './App.css'
 import NavBar from "./componentes/Navbar";
 
 function App() {
   return (
-    
-     <NavBar></NavBar>
+    <BrowserRouter>
+      <NavBar></NavBar>
+      <Routes>
+          <Route path="/" element={<Listing></Listing>}></Route>
+          <Route path="/form">
+              <Route path=":movieIc" element={<Form></Form>}></Route>
+          </Route>
+      </Routes>
+
+    </BrowserRouter>
+
 
   );
 }
