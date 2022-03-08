@@ -1,5 +1,6 @@
 import MovieScore from "componentes/Moviescore";
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./style.css"
 function MovieCard() {
@@ -18,7 +19,11 @@ function MovieCard() {
             <div className="dsmovie-card-bottom-container">
                 <h3>{movie.title}</h3>
                 <MovieScore />
-                <div className="btn btn-primary dsmovie-btn">Avaliar</div>
+
+                <Link to={`/Form/${movie.id}`}>
+                    <div className="btn btn-primary dsmovie-btn">Avaliar</div>
+                </Link>
+
             </div>
         </div>
     )
