@@ -16,7 +16,7 @@ public class Movie {
     private Integer count;
     private String image;
 
-    @OneToMany(mappedBy = "id.movie")
+    @OneToMany(fetch = FetchType.EAGER,mappedBy = "id.movie")
     private Set<Score> scores = new HashSet<>();
 
     public Movie() {
