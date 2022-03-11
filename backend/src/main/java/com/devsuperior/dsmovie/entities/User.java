@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 @Table(name="tb_user")
 public class User {
-
+    // refere-se a um pk
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
