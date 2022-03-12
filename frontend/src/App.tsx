@@ -5,7 +5,7 @@ import Form from "componentes/Pages/Form";
 import Listing from "componentes/Pages/Listing";
 import React from "react"
 
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 
 
