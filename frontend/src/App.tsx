@@ -17,7 +17,7 @@ function App() {
       <Routes>
           <Route path="/" element={<Listing></Listing>}></Route>
           <Route path="/form">
-              <Route path=":movieIc" element={<Form></Form>}></Route>
+              <Route path=":movieId" element={<Form></Form>}></Route>
           </Route>
       </Routes>
 
