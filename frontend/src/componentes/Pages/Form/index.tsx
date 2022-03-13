@@ -1,14 +1,14 @@
 
 import FormCard from "componentes/FormCard";
 import React from "react"
-import { Link, useLocation, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 
 
 
 
 function Form() {
     const params = useParams()
-    const paramsL = useLocation()
+    
 
     console.log(params)
     return (
